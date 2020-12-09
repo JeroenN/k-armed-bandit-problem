@@ -13,12 +13,11 @@ int selectEachActionOnce(std::vector<std::pair<double, int>> estimates, int k)
     return -1;
 }
 
-int selectActionUCB(std::vector<std::pair<double, int>> estimates, int t, int k)
+int selectActionUCB(std::vector<std::pair<double, int>> estimates, int t, int k, double c)
 {
     //At = argmax(Qt(a) + c *sqrt(ln(t) / Nt(a))
     double maxEstimate = 0;
     int action = 0;
-    int c = 2;
     int preAction = selectEachActionOnce(estimates, k);
     if (preAction != -1)
         return action;

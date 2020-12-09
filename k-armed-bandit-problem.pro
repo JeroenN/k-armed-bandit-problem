@@ -8,6 +8,7 @@ SOURCES += \
         bernoulli.cpp \
         epsilongreedy.cpp \
         gaussian.cpp \
+        gradient.cpp \
         main.cpp
 
 HEADERS += \
